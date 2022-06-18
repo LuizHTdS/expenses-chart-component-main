@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1,
+.dark-txt {
+  color: $clr-DarkBrown;
+}

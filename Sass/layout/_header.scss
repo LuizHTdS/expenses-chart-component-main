@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.expenses {
+  &__header {
+    display: flex;
+    border-radius: 1.5rem;
+    margin: 10rem 0 2rem 0;
+    padding: 2rem 3rem;
+    background-color: $clr-SoftRed;
+    h1 {
+      color: $clr-Cream;
+      font-size: $txt-size-nrml;
+      font-weight: 400;
+    }
+    &--balance {
+      display: block;
+      font-weight: 700;
+      font-size: $txt-size-big;
+    }
+    &--logo {
+      margin-left: auto;
+    }
+  }
+}

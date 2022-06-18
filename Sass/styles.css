@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -74,4 +75,56 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+.dark-txt {
+  color: hsl(25deg, 47%, 15%);
+}
+
+.expenses__header {
+  display: flex;
+  border-radius: 1.5rem;
+  margin: 10rem 0 2rem 0;
+  padding: 2rem 3rem;
+  background-color: hsl(10deg, 79%, 65%);
+}
+.expenses__header h1 {
+  color: hsl(27deg, 66%, 92%);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.expenses__header--balance {
+  display: block;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+.expenses__header--logo {
+  margin-left: auto;
+}
+
+.expenses {
+  border: 1px solid red;
+  max-width: 70rem;
+  height: 65rem;
+  margin: 0 auto;
+}
+
+.expenses__chart {
+  background-color: hsl(33deg, 100%, 98%);
+}
+.expenses__chart h1 {
+  font-size: 3.2rem;
+}
+.expenses__chart--weekdays {
+  display: flex;
+  font-size: 1.8rem;
+  color: hsl(28deg, 10%, 53%);
 }/*# sourceMappingURL=styles.css.map */

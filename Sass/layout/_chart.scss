@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.expenses {
+  &__chart {
+    background-color: $clr-PaleOrange;
+    h1 {
+      font-size: $txt-size-big;
+    }
+    &--weekdays {
+      display: flex;
+      font-size: $txt-size-nrml;
+      color: $clr-MediumBrown;
+    }
+  }
+}
