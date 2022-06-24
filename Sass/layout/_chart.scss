@@ -6,10 +6,23 @@
     h1 {
       font-size: $txt-size-big;
     }
+    padding: 4rem 4rem;
     &--weekdays {
+      margin-top: 5rem;
       display: flex;
+      justify-content: space-between;
       font-size: $txt-size-nrml;
       color: $clr-MediumBrown;
+      .bar {
+        background-color: $clr-SoftRed;
+        height: 15rem;
+        width: 6rem;
+        border-radius: 0.65rem;
+      }
+      p {
+        display: flex;
+        justify-content: space-around;
+      }
     }
   }
 }
