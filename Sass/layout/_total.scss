@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+
+.expenses {
+  &__total {
+    margin-top: 0.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    background-color: white;
+    padding: 2rem 4rem 4rem;
+    p {
+      font-size: $txt-size-nrml;
+      color: $clr-MediumBrown;
+    }
+    h1 {
+      font-size: $txt-size-big + 1.8rem;
+    }
+    .percentage-parent {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    &--percentage {
+      h1 {
+        font-size: $txt-size-nrml;
+      }
+    }
+  }
+}

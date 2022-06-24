@@ -1,8 +1,12 @@
 @use '../abstracts/variables' as *;
 
+.card-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .expenses {
-  border: 1px solid red;
-  max-width: 70rem;
+  width: 70rem;
   height: 65rem;
-  margin: 0 auto;
 }

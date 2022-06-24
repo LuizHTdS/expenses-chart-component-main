@@ -2,11 +2,12 @@
 
 .expenses {
   &__chart {
-    background-color: $clr-PaleOrange;
+    background-color: white;
     h1 {
       font-size: $txt-size-big;
     }
     padding: 4rem 4rem;
+    border-radius: 1.5rem;
     &--weekdays {
       margin-top: 5rem;
       display: flex;
