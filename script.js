@@ -6,6 +6,16 @@ async function updateBarHeight() {
   for (let i = 0; i < barsEl.length; i++) {
     barsEl[i].style.height = `${json[i].amount * 2.5}px`;
   }
+
+  gsap
+    .from('.bar', {
+      height: 0,
+      duration: 1.5,
+      ease: 'bounce.out',
+    })
+    .to('.bar', {
+      height: auto,
+    });
 }
 
 const barsEl = document.querySelectorAll('.bar');
