@@ -92,6 +92,10 @@ html {
   background-color: hsl(27deg, 66%, 92%);
 }
 
+body {
+  height: 100vh;
+}
+
 .expenses__header {
   display: flex;
   border-radius: 1.5rem;
