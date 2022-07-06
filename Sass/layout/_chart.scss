@@ -17,8 +17,9 @@
       font-size: $txt-size-nrml;
       color: $clr-MediumBrown;
       .bar {
+        transition: all 0.5s;
         background-color: $clr-SoftRed;
-        height: 2rem;
+        height: 0.5rem;
         width: 6rem;
         border-radius: 0.65rem;
       }

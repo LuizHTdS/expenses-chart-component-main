@@ -142,8 +142,9 @@ html {
   color: hsl(28deg, 10%, 53%);
 }
 .expenses__chart--weekdays .bar {
+  transition: all 0.5s;
   background-color: hsl(10deg, 79%, 65%);
-  height: 2rem;
+  height: 0.5rem;
   width: 6rem;
   border-radius: 0.65rem;
 }
