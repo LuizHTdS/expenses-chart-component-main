@@ -2,6 +2,8 @@
 require 'connect.php';
 include_once('script.php')?>
 
+<!DOCTYPE html>
+
 <html>
 <head>
 	<link rel="stylesheet" href="style.css">
