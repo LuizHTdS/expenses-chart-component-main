@@ -21,6 +21,10 @@
         height: 0.5rem;
         width: 6rem;
         border-radius: 0.65rem;
+        &:hover {
+          cursor: pointer;
+          background-color: lighten($clr-SoftRed, 10%);
+        }
       }
       p {
         display: flex;
