@@ -10,7 +10,7 @@
     border-radius: 1.5rem;
     &--weekdays {
       align-items: flex-end;
-      height: 15rem;
+      height: 20rem;
       margin-top: 5rem;
       display: flex;
       justify-content: space-between;
@@ -26,9 +26,18 @@
           background-color: lighten($clr-SoftRed, 10%);
         }
       }
-      p {
+      .spending {
+        background-color: $clr-DarkBrown;
+        border-radius: 00.65rem;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0 1rem 0;
+        color: $clr-Cream;
+      }
+      .weekday {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 6rem;
       }
     }
   }

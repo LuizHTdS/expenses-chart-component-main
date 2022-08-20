@@ -95,6 +95,10 @@ body {
   height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 .expenses__header {
   display: flex;
   border-radius: 1.5rem;
@@ -137,7 +141,7 @@ body {
 }
 .expenses__chart--weekdays {
   align-items: flex-end;
-  height: 15rem;
+  height: 20rem;
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
@@ -154,9 +158,18 @@ body {
   cursor: pointer;
   background-color: #f29e8d;
 }
-.expenses__chart--weekdays p {
+.expenses__chart--weekdays .spending {
+  background-color: hsl(25deg, 47%, 15%);
+  border-radius: 0.65rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 1rem 0;
+  color: hsl(27deg, 66%, 92%);
+}
+.expenses__chart--weekdays .weekday {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 6rem;
 }
 
 .expenses__total {
