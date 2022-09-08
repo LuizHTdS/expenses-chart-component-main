@@ -46,10 +46,14 @@ const toggleSpending = function () {
     isActive = 0;
   }
 
-  if (isActive && this.classList.indexof('biggestBar') >= 0) {
+  if (isActive && this.classList.length > 1) {
     this.style.backgroundColor = 'hsl(186, 34%, 70%)';
-  } else if (isActive && this.classList.indexof('biggestBar') === -1) {
+  } else if (!isActive && this.classList.length > 1)
+    this.style.backgroundColor = 'hsl(186, 34%, 60%)';
+  else if (isActive && this.classList.length <= 1) {
     this.style.backgroundColor = 'hsl(10, 79%, 75%)';
+  } else if (!isActive && this.classList.length <= 1) {
+    this.style.backgroundColor = 'hsl(10, 79%, 65%)';
   }
 };
 
