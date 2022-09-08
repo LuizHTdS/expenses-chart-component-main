@@ -153,10 +153,7 @@ body {
   height: 0.5rem;
   width: 6rem;
   border-radius: 0.65rem;
-}
-.expenses__chart--weekdays .bar:hover {
   cursor: pointer;
-  background-color: #f29e8d;
 }
 .expenses__chart--weekdays .spending {
   background-color: hsl(25deg, 47%, 15%);

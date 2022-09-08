@@ -38,10 +38,35 @@ async function updateSpending() {
   }
 }
 
+const toggleSpending = function () {
+  this.parentElement.children[0].classList.toggle('hidden');
+  isActive++;
+
+  if (isActive > 1) {
+    isActive = 0;
+  }
+  console.log(this.classList.indexOf('bar'));
+
+  if (isActive && this.classList.indexof('biggestBar') >= 0) {
+    this.style.backgroundColor = 'hsl(186, 34%, 70%)';
+  } else if (isActive && this.classList.indexof('biggestBar') === -1) {
+    this.style.backgroundColor = 'hsl(10, 79%, 75%)';
+  }
+};
+
 const tl = gsap.timeline();
 const barsEl = document.querySelectorAll('.bar');
 const spendingEl = document.querySelectorAll('.spending');
-console.log(spendingEl);
+
+let isActive = 0;
 
 updateBarHeight();
 updateSpending();
+
+for (let i = 0; i < barsEl.length; i++) {
+  barsEl[i].addEventListener('mouseover', toggleSpending);
+}
+
+for (let i = 0; i < barsEl.length; i++) {
+  barsEl[i].addEventListener('mouseleave', toggleSpending);
+}
