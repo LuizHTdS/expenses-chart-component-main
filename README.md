@@ -1,1 +1,1 @@
-This is a WIP solution of Front End Mentor' Expenses chart component challenge, that can be found at https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
+This is a solution of Front End Mentor's Expenses chart component challenge, which can be found at https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt
