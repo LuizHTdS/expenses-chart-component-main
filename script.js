@@ -45,7 +45,6 @@ const toggleSpending = function () {
   if (isActive > 1) {
     isActive = 0;
   }
-  console.log(this.classList.indexOf('bar'));
 
   if (isActive && this.classList.indexof('biggestBar') >= 0) {
     this.style.backgroundColor = 'hsl(186, 34%, 70%)';
