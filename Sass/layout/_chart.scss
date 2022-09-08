@@ -9,11 +9,10 @@
     padding: 4rem 4rem;
     border-radius: 1.5rem;
     &--weekdays {
-      align-items: flex-end;
       height: 20rem;
       margin-top: 5rem;
-      display: flex;
-      justify-content: space-between;
+      @include space-items;
+      align-items: flex-end;
       font-size: $txt-size-nrml;
       color: $clr-MediumBrown;
       .bar {
@@ -31,8 +30,7 @@
         color: $clr-Cream;
       }
       .weekday {
-        display: flex;
-        justify-content: space-around;
+        @include center-item;
         flex-wrap: wrap;
         max-width: 6rem;
       }
